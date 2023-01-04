@@ -1,0 +1,669 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    max-width: 1700px;
+    margin: 20px auto;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* Navigation */
+
+.kanan a {
+    font-size: 18px;
+    position: relative;
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.kanan a::after {
+    content: "";
+    position: absolute;
+    background-color: rebeccapurple;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.kanan a:hover::after {
+    width: 100%;
+}
+
+.kanan ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+
+.kanan ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.kanan ul li a {
+    display: block;
+    padding: 0 15px;
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 15px;
+    background: white;
+}
+
+.kanan ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.kanan ul li:hover>ul {
+    display: block;
+}
+
+.kanan ul ul li {
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/* Login */
+
+.login {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-right: 50px;
+}
+
+#login-btn {
+    text-align: center;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 0 black;
+    transition: 0.5s;
+}
+
+#login-btn:hover {
+    box-shadow: inset 150px 0 0 0 black;
+    cursor: pointer;
+    color: white;
+}
+
+
+.login a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+#sign-btn {
+    text-align: center;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: #e0d6eb;
+    box-shadow: inset 0 0 0 0;
+    transition: 0.5s;
+}
+
+#sign-btn:hover {
+    box-shadow: inset 150px 0 0 0 rebeccapurple;
+    cursor: pointer;
+    color: white;
+}
+
+/* Profile */
+#profile {
+    background-color: transparent;
+    color: #000;
+    margin-right: 10px;
+}
+
+/* Log Out */
+.logout {
+    display: flex;
+    align-items: center;
+}
+
+.logout p {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.logout #log {
+    text-decoration: none;
+    color: black;
+    background-color: #c4c4c4;
+    box-shadow: inset 0 0 0 0;
+    border-radius: 40px;
+    padding: 10px 30px;
+    margin-right: 50px;
+    transition: 0.5s;
+}
+
+.logout #log:hover {
+    box-shadow: inset 150px 0 0 0 red;
+    cursor: pointer;
+}
+
+/* Content */
+.container-faq {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    max-width: 1550px;
+    margin: 2rem auto;
+}
+
+.faq-category {
+    max-width: 1550px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.box-faq {
+    padding: 50px 80px;
+    /* margin: 3rem; */
+    background-color: #a87eec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-faq img {
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+.box-faq h3 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+#box-long {
+    padding: 50px 70px;
+}
+
+.faq-section {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.box-faq-section {
+    max-width: 1550px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.box-faq-section .heading-faq-box {
+    background: #7800CF;
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.faqs {
+    padding: 0px 20px 20px;
+}
+
+summary::marker {
+    float: right;
+    margin-top: 3px;
+}
+
+details {
+    background-color: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.details summary {
+    outline: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f7f8f8;
+    width: 100vw;
+}
+
+.container-footer-faq {
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    background-color: #f7f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cetax {
+    margin-left: 70px;
+    text-align: center;
+}
+
+.footer-img a {
+    text-decoration: none;
+}
+
+.footer-img a img {
+    width: 50px;
+}
+
+.copyright p {
+    color: #c4c4c4;
+}
+
+.location {
+    margin-right: 50px;
+}
+
+.location p {
+    width: 300px;
+    color: #c4c4c4;
+    font-weight: 500;
+}
+
+.contact-us p {
+    color: #c4c4c4;
+}
+
+.useful-link {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.useful-link a {
+    text-decoration: none;
+    color: #c4c4c4;
+    transition: .5s all ease-in-out;
+}
+
+.useful-link a:hover {
+    color: black;
+}
+
+/* Laptop Small */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    /* Navbar */
+    nav {
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .brand {
+        margin-left: 10px;
+    }
+
+    #color {
+        margin-left: 0;
+        color: grey;
+    }
+
+    /* Navigation */
+    .navbar {
+        margin: 0;
+    }
+
+    .kanan {
+
+        margin: 0 auto;
+    }
+
+    .kanan ul li {
+        margin: 0 auto;
+    }
+
+    .kanan ul li a {
+        font-size: 14px;
+    }
+
+    /* Log Out */
+    .logout {
+        margin: 0 auto;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout a {
+        margin-right: 0px;
+        font-size: 14px;
+    }
+
+    .logout p {
+        font-size: 14px;
+    }
+
+    /* Content */
+    .container-faq {
+        max-width: 1000px;
+        margin: 2rem auto;
+    }
+
+    .box-faq {
+        padding: 30px 50px;
+        margin: 1rem;
+    }
+
+    .box-faq img {
+        max-width: 150px;
+        margin: 10px auto;
+        border-radius: 50%;
+    }
+
+    #box-long {
+        padding: 30px 15px;
+    }
+
+    /* Footer */
+    .container-footer {
+        max-width: 900px;
+    }
+
+    .location {
+        margin-right: 0px;
+    }
+}
+
+/* Tab */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        margin: 20px auto;
+    }
+
+    .logo {
+        margin-left: 5px;
+    }
+
+    .logo img {
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    /* Navigation */
+    .kanan ul li {
+        margin-left: 5px;
+    }
+
+    .kanan ul li a {
+        font-size: 10px;
+        padding: 0px 10px;
+    }
+
+    /* Log Out */
+    .logout {
+        margin-right: -30px;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout #log {
+        box-shadow: inset 0 0 0 0;
+        border-radius: 20px;
+        padding: 5px 0px;
+        text-align: center;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .logout p {
+        font-size: 12px;
+    }
+
+    /* Content */
+    .container-faq {
+        max-width: 600px;
+        margin: 3rem auto;
+    }
+
+    .faq-category {
+        margin: 3rem auto;
+    }
+
+    .box-faq {
+        padding: 30px 30px;
+    }
+
+    #box-long {
+        padding: 30px 20px;
+    }
+
+    /* Footer */
+    footer {
+        margin: 0 auto;
+    }
+
+    .container-footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .cetax {
+        margin-left: -10px;
+        font-size: 14px;
+    }
+
+    .footer-img a img {
+        width: 40px;
+    }
+
+    .copyright p {
+        width: 200px;
+    }
+
+    .location {
+        margin-right: 20px;
+    }
+
+    .location p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .contact-us p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .useful-link {
+        margin-right: 50px;
+    }
+}
+
+/* Handphone Size L */
+@media screen and (max-width: 425px) {
+    nav {
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin: 20px auto;
+    }
+
+    .logo img {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    /* Navigation */
+    .kanan {
+        display: none;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .navbar li {
+        text-align: center;
+        background-color: white;
+    }
+
+    .active-nav {
+        display: block;
+    }
+
+    
+
+    #menu-btn {
+        display: block;
+    }
+
+    /* Log Out */
+    .logout {
+        max-width: 400px;
+        margin: 10px auto;
+        display: none;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout #log {
+        box-shadow: inset 0 0 0 0;
+        border-radius: 20px;
+        padding: 5px 0px;
+        text-align: center;
+        font-size: 16px;
+        width: 100px;
+        margin: 0;
+    }
+
+    .logout p {
+        font-size: 16px;
+    }
+    
+    .active-log {
+        display: flex;
+        max-width: 300px;
+    }
+
+    /* Content */
+    .container-faq {
+        max-width: 300px;
+        margin: 3rem auto;
+    }
+
+    .faq-title {
+        text-align: center;
+    }
+
+    .box-faq {
+        padding: 20px 20px;
+        margin: 0 auto;
+    }
+
+    #box-long {
+        padding: 20px 10px;
+    }
+
+    .faq-category {
+        margin: 3rem auto;
+    }
+
+    .faq-section h2 {
+        text-align: center;
+    }
+
+    /* Footer */
+    .container-footer-faq {
+        max-width: 200px;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .cetax {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .location {
+        text-align: center;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+
+    .location p {
+        max-width: 200px;
+    }
+
+    .contact-us {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .useful-link {
+        text-align: center;
+        margin: 10px auto;
+    }
+}
